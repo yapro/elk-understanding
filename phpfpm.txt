@@ -1,0 +1,9 @@
+my php-fpm-1
+below you can see an empty string, and it is not an error, it is a test string
+
+{}
+{"message":"my php-fpm-2"}
+{"message":"{\"inner\":\"my php-fpm-3\"}"}
+{"message":"my check that logstash.filter not use type=json from php-fpm.txt", "type":"json"}
+{"message":"my check that logstash.filter not use type=type_my_own from php-fpm.txt", "type":"type_my_own"}
+{"dateTime":"2022-01-20 10:57:58","type":"UNKNOWN","message":"WARNING: failed to acquire scoreboard","file":"","line":0,"stackTrace":""}

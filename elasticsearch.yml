@@ -1,0 +1,24 @@
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+# minimum_master_nodes need to be explicitly set when bound on a public IP
+# set to 1 to allow single node clusters
+# Details: https://github.com/elastic/elasticsearch/pull/17288
+discovery.zen.minimum_master_nodes: 1
+
+# Path to directory where to store the data (separate multiple locations by comma):
+path.data: /var/tmp/elasticsearch/data
+
+# Path to log files:
+path.logs: /var/tmp/elasticsearch/logs
+
+# X-Pack Settings https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
+
+# Security Settings - https://www.elastic.co/guide/en/x-pack/current/security-settings.html#anonymous-access-settings
+xpack.security.enabled: false
+
+# .watcher-history-* https://www.elastic.co/guide/en/x-pack/current/notification-settings.html
+xpack.watcher.enabled: false
+
+# .monitoring-es-* and .monitoring-kibana-* https://www.elastic.co/guide/en/x-pack/current/monitoring-settings.html
+xpack.monitoring.enabled: false

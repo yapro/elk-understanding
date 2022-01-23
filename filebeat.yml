@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /tmp/phpfpm.txt
+
+output.logstash:
+  hosts: ["logstash:31311"]
